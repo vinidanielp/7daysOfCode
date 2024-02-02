@@ -1,0 +1,271 @@
+:root {
+  --text-color: #667085;
+  --main-color: #8e2424;
+  --title-color: #101828;
+}
+
+/* 
+  Resets 
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+}
+
+a {
+  text-decoration: none;
+}
+/* NavBar */
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1rem 0;
+}
+
+.navbar-menu a {
+  margin-right: 2rem;
+  color: var(--text-color);
+}
+
+button {
+  padding: 0.8rem 1rem;
+  border: none;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text-color);
+  border-radius: 0.5rem;
+  background: none;
+}
+
+button.signUp {
+  background-color: var(--main-color);
+  color: #fff;
+}
+
+/* Cabeçalho - Primeira seção */
+
+.about-us {
+  padding: 7rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.about-us span {
+  font-weight: 500;
+  color: var(--main-color);
+}
+
+.about-us h1 {
+  font-size: 2rem;
+  color: var(--title-color);
+}
+
+.about-us p {
+  text-align: center;
+  color: var(--text-color);
+  max-width: 50%;
+  line-height: 1.5rem;
+}
+
+/* Métricas - Segunda seção */
+
+.metrics-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 3rem;
+  padding: 0 8rem;
+}
+
+.metrics-container .metric {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.metrics-container .metric .title {
+  font-size: 3rem;
+  font-weight: 600;
+  color: var(--main-color);
+}
+
+.metrics-container .metric .metric-title {
+  font-weight: 500;
+  color: var(--title-color);
+}
+
+.metrics-container .metric .metric-title + span {
+  color: var(--text-color);
+  line-height: 140%;
+  font-size: 90%;
+}
+
+/* Talento - Terceira seção */
+.talents {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10rem;
+  gap: 1rem;
+}
+
+.talents span {
+  font-weight: 500;
+  color: var(--main-color);
+  padding: 0.5rem 1rem;
+  background: rgba(142, 36, 36, 0.05);
+  border-radius: 1rem;
+}
+
+.talents h2 {
+  font-size: 1.6rem;
+  color: var(--title-color);
+}
+
+.talents p {
+  color: var(--text-color);
+}
+
+.talents img {
+  margin-top: 2rem;
+  width: 80%;
+}
+
+/* Vagas Aberta - Quarta seção */
+.vacancies-open {
+  padding: 3rem 0 0 0;
+}
+
+.vacancies-open span.main-area {
+  display: block;
+  max-width: 50%;
+  margin: 0 auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-weight: bold;
+  color: var(--title-color);
+}
+
+.vacancies-open .vacancy {
+  border: 1px solid #eaecf0;
+  border-radius: 0.5rem;
+  box-sizing: border-box;
+  padding: 1rem;
+  max-width: 50%;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  color: var(--title-color);
+}
+
+.vacancies-open .vacancy + span {
+  margin-top: 3rem;
+}
+
+.vacancies-open .vacancy span.vacancy-title {
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+
+.vacancies-open .vacancy .vacancy-infomation {
+  margin-top: 2rem;
+  font-size: 90%;
+  color: var(--text-color);
+  display: flex;
+  gap: 2rem;
+}
+
+/* Depoimentos - Quinta seção */
+
+.depositions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 80%;
+  margin: 8rem auto;
+  background-color: rgba(195, 25, 25, 0.05);
+  padding: 3rem 2rem;
+}
+
+.depositions span {
+  font-weight: 500;
+  color: var(--main-color);
+}
+
+.depositions h2 {
+  color: var(--title-color);
+  font-weight: 500;
+  text-align: center;
+  max-width: 70%;
+  margin: 2rem 0;
+}
+
+.depositions img {
+  width: 48px;
+}
+
+.depositions span.name {
+  font-weight: 400;
+  color: var(--title-color);
+  margin: 0.5rem 0;
+}
+
+.depositions span.position {
+  font-weight: 400;
+  color: var(--text-color);
+}
+
+/* Rodapé - Sexta seção */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #F9FAFB;
+  padding: 5rem 1rem;
+  gap: 1.5rem;
+  text-align: center;
+}
+
+footer h2 {
+  font-size:1.8rem;
+  font-weight: 600;
+  color: var(--title-color);
+}
+
+footer span {
+  font-weight: 400;
+  font-size: 1.1rem;
+  color: var(--text-color);
+
+}
+
+footer form {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer input {
+  outline: none;
+  border: 1px solid #D0D5DD;
+  border-radius: 0.5rem;
+  padding-left: 1rem;
+  width: 20rem;
+  margin-right: 1rem;
+}
+
+footer form + span {
+  font-size: 0.9rem;
+  color: #98A2B3;
+}
